@@ -36,7 +36,7 @@ static final Sorting s=new Sorting();
         assertEquals(arr.length,arr1.length);
         for (int i=0;i<arr.length;i++) {
             if(i!=arr.length-1)
-            assertTrue(arr[i]<arr[i+1]);
+            assertTrue(arr[i]<=arr[i+1]);
             assertTrue(check(arr1,arr[i]));
         }
         int arr2[]={3,100};
@@ -45,7 +45,7 @@ static final Sorting s=new Sorting();
         assertEquals(arr2.length,arr1.length);
         for (int i=0;i<arr2.length;i++) {
             if(i!=arr2.length-1)
-                assertTrue(arr2[i]<arr2[i+1]);
+                assertTrue(arr2[i]<=arr2[i+1]);
             assertTrue(check(arr1,arr2[i]));
         }
     }
@@ -68,14 +68,14 @@ static final Sorting s=new Sorting();
         assertEquals(arr.length,arr1.length);
         for (int i=0;i<arr.length;i++) {
             if(i!=arr.length-1)
-                assertTrue(arr[i]<arr[i+1]);
+                assertTrue(arr[i]<=arr[i+1]);
             assertTrue(check(arr1,arr[i]));
         }
     }
     @Test
     void sort_rand_nums() {
         Random rn=new Random();
-        int arr[]=new int[30];
+        int arr[]=new int[200];
         for (int i=0;i<arr.length;i++)
         {
             arr[i]=rn.nextInt();
@@ -85,7 +85,7 @@ static final Sorting s=new Sorting();
         assertEquals(arr.length,arr1.length);
         for (int i=0;i<arr.length;i++) {
             if(i!=arr.length-1)
-                assertTrue(arr[i]<arr[i+1]);
+                assertTrue(arr[i]<=arr[i+1]);
             assertTrue(check(arr1,arr[i]));
         }
     }
@@ -103,7 +103,7 @@ static final Sorting s=new Sorting();
         assertEquals(arr.length,arr1.length);
         for (int i=0;i<arr.length;i++) {
             if(i!=arr.length-1)
-                assertTrue(arr[i]<arr[i+1]);
+                assertTrue(arr[i]<=arr[i+1]);
             assertTrue(check(arr1,arr[i]));
         }
     }
@@ -122,7 +122,7 @@ static final Sorting s=new Sorting();
         assertEquals(arr.length,arr1.length);
         for (int i=0;i<arr.length;i++) {
             if(i!=arr.length-1)
-                assertTrue(arr[i]<arr[i+1]);
+                assertTrue(arr[i]<=arr[i+1]);
             assertTrue(check(arr1,arr[i]));
         }
     }
